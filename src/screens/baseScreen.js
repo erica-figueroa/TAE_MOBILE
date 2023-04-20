@@ -4,4 +4,8 @@ export default class BaseScreen {
         await element.waitForDisplayed();
         await element.click();
     }
+    async doTapOnCustom(element) {
+        await element.waitForDisplayed({ timeout: 40000 });
+        await element.click();
+    }
 }
